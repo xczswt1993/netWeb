@@ -1,1 +1,1 @@
-﻿
+Data Source=.;Initial Catalog=stu04;Integrated Security=True

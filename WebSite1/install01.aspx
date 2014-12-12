@@ -55,6 +55,7 @@
                 <td>
                     <asp:Button ID="btnCreate" runat="server" onclick="btnCreate_Click" 
                         Text="创建数据库" />
+                    <asp:Button ID="btnNext" runat="server" onclick="btnNext_Click" Text="下一步" />
                 </td>
             </tr>
         </table>
