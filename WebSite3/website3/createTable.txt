@@ -1,0 +1,7 @@
+﻿create table T_user
+(
+username nvarchar(50) primary key,
+userpass nvarchar(50), 
+age int ,
+)
+insert into T_user (username,userpass,age) values ('admin','123',11);
