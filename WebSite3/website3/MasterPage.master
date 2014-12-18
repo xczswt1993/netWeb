@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>无标题页</title>
+    <style type="text/css">
+<!--
+body,td,th {
+	font-size: 12px;
+}
+#menu{height:30px;background:url(images/menubg.gif) repeat-x;border:1px solid #dde7d4;margin-bottom:10px;OVERFLOW:hidden}
+#menu ul{float:left;list-style:none;margin:0px;}
+#menu ul li{float:left;margin:0 10px;display:block;line-height:30px;}
+#menu ul li a:link,#menu ul li a:visited{font-weight:bold;color:#666;display:block;text-decoration:none;padding:0 10px}
+#menu ul li a:hover{background:url(images/menubghover.gif) 2px 2px repeat-x;display:block}
+#menu ul .hover{background:url(images/menubghover.gif) 2px 2px repeat-x;display:block}
+-->
+</style>
+    
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div style="text-align: center">
+            <table border="0" style="width: 1000px" align="center">
+                <tr>
+                    <td>
+                        <img src="img/bgimg.png" /></td>
+                </tr>
+                <tr>
+                    <td >
+                    <div id="menu" >
+  <ul>
+    <li><a href="#"  class="hover">用户管理</a></li>
+    <li><a href="#">菜单管理</a></li>
+    <li><a href="#">点餐</a></li>
+    <li><a href="#">诚聘英才</a></li>
+    <li><a href="#">用户留言</a></li>
+    <li><a href="#">联系我们</a></li>
+  </ul>
+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height:500px;">
+    
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        </asp:contentplaceholder>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Copy Right ByXXXX</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+

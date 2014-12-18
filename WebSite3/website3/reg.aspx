@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>注册</title>
     <style type="text/css">
         .style1
         {
@@ -39,6 +39,11 @@
             width: 839px;
         }
     </style>
+    <link href="Style/css/zebra_dialog.css" rel="stylesheet" type="text/css" />
+       <link href="Style/css/ir_black.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Style/js/jquery-1.6.2.js"></script>
+        <script type="text/javascript" src="Style/js/highlight.js"></script>
+        <script type="text/javascript" src="Style/js/zebra_dialog.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -71,7 +76,7 @@
             <td class="style4">
                 密码</td>
             <td style="text-align: center">
-                <asp:TextBox ID="txtUserPwd" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtUserPwd"  type="password" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
