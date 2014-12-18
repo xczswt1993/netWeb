@@ -1,0 +1,99 @@
+﻿
+body {
+	background:#ffffff;
+	margin:10;	
+}
+body, table, th, td, input, select, textarea {
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+img, form {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+	color:#063685;
+	text-decoration:none;
+}
+a:hover, a:active {
+	color:#FF5500;
+	text-decoration:underline;
+}
+
+
+table.default {
+	border:1px solid #0283c5;
+	border-collapse:collapse;
+	margin-top:10px;
+}
+
+
+table.default td, table.default tr.style1 td {
+	padding:2 5 2 5;
+	height:26px;
+	border:1px solid #ffffff;
+}
+
+table.default tr, table.default tr.style1{
+	background-color:#f0f0f0;
+}
+table.default tr.style0{
+	background-color:#dfdfdf;
+}
+/*table.default caption
+{
+	font-weight:bold;
+	background:#0283c5;
+	color:#ffffff;
+	border-collapse:collapse;
+	margin-top:10px;
+	height:26px;
+	border-bottom:1px solid #ffffff;
+}
+*/
+table.default tr.title td,table.default tr.title th, table.default tr.ltitle td {
+	font-weight:bold;
+	background:#0283c5;
+	color:#ffffff;
+	border:1px solid #ffffff;
+	white-space:nowrap;
+	height:26px;
+}
+
+table.default tr.title td {
+	text-align:center;
+}
+
+
+
+table.default td.item {
+	font-weight:bold;
+	color:#333333;
+	text-align:right;
+	vertical-align:middle;
+	padding-top:4px;
+}
+
+
+
+.btn {
+	BORDER-RIGHT: #002D96 1px solid;
+	PADDING-RIGHT: 5px;
+	BORDER-TOP: #002D96 1px solid;
+	PADDING-LEFT: 5px;
+	FONT-SIZE: 12px;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#9DBCEA);
+	BORDER-LEFT: #002D96 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 3px;
+	BORDER-BOTTOM: #002D96 1px solid
+}
+

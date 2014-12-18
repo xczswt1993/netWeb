@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
+using System.Data;
 
 /// <summary>
 ///SqlHelp 的摘要说明
@@ -21,13 +22,14 @@ public class SqlHelp
      * excuteScalar返回为string类型的数据库查询
      * SqlConnection对象，SqlCommand对象
      */
+    private static string strAddress = "Data Source=.\\SQLEXPRESS;Initial Catalog=stu;User ID=sa;Password=123456";
     public static  string ExecuteScalar(string sql)
     {
         try 
-	    {	        
-		    string strAddress = new ConfigUtil().GetAddrss();
-            
-            SqlConnection conn=new SqlConnection(strAddress);
+	    {
+
+
+            SqlConnection conn = new SqlConnection(strAddress);
             conn.Open();
             SqlCommand sqlcmd=new SqlCommand(sql,conn);
             
@@ -51,7 +53,7 @@ public class SqlHelp
     {
         try
         {
-            string strAddress = new ConfigUtil().GetAddrss();
+            
 
             SqlConnection conn = new SqlConnection(strAddress);
             conn.Open();
@@ -66,6 +68,25 @@ public class SqlHelp
         catch
         {
             return 0;
+        }
+    }
+    public static DataSet Query(string sql)
+    {
+        try
+        {
+            
+            SqlConnection conn = new SqlConnection(strAddress);
+            conn.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter sqldata = new SqlDataAdapter(sql, conn);
+            sqldata.Fill(ds);
+            conn.Close();
+            return ds;
+        }
+        catch (Exception ex)
+        {
+
+            return null;
         }
     }
 }

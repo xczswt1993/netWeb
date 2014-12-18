@@ -20,7 +20,7 @@ public partial class reg : System.Web.UI.Page
     protected void btnReg_Click(object sender, EventArgs e)
     {
         
-        string sql = string.Format("insert into t_User (name,pass,age) values('{0}','{1}','{2}')", txtUserName.Text, txtUserPwd.Text, txtUserAge.Text);
+        string sql = string.Format("insert into t_User (username,userpass,age) values('{0}','{1}','{2}')", txtUserName.Text, txtUserPwd.Text, txtUserAge.Text);
 
             int result;
             result=SqlHelp.ExecuteNonQuery(sql);

@@ -58,7 +58,8 @@
     <table class="style1">
         <tr>
             <td class="style6" rowspan="4">
-                <asp:Image ID="Image1" runat="server" Height="398px" Width="400px" src="" />
+                <asp:Image ID="Image1" runat="server" Height="415px" Width="399px" 
+                    src="left.jpg" style="margin-left: 0px" />
             </td>
             <td class="style4">
                 用户名</td>
@@ -70,7 +71,7 @@
             <td class="style4">
                 密码</td>
             <td style="text-align: center">
-                <asp:TextBox ID="txtUserPwd" runat="server" style="text-align: center"></asp:TextBox>
+                <asp:TextBox ID="txtUserPwd" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
