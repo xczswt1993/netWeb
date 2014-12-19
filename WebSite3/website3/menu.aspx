@@ -1,16 +1,14 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="userlist.aspx.cs" Inherits="Default2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="menu.aspx.cs" Inherits="menu" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server"  >
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" 
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" 
     DataKeyNames="id" Width="539px" align="center" Height="156px" 
     onrowcommand="GridView1_RowCommand">
                 <Columns>
                 
-                <asp:BoundField DataField="username" HeaderText="用户名"/>
-                <asp:BoundField DataField="userpass" HeaderText="密码" />
-                <asp:BoundField DataField="regDate" HeaderText="日期" DataFormatString="{0:d}"  />
+                <asp:BoundField DataField="menuname" HeaderText="菜名"/>       
                 <asp:BoundField DataField="money" HeaderText="钱"  />
-                <asp:BoundField DataField="age" HeaderText="年龄"  />
+                
                  <asp:TemplateField HeaderText="操作">
                 <ItemTemplate>
                     <asp:LinkButton ID="LinkButton1" runat="server" CommandName="upd" CommandArgument='<%# Eval("id") %>'>修改</asp:LinkButton>
@@ -23,6 +21,6 @@
 
                 </Columns>
                 </asp:GridView>
-<asp:Button ID="btnadd" runat="server" onclick="btnadd_Click" Text="增加用户" />
+<asp:Button ID="btnadd" runat="server" onclick="btnadd_Click" Text="增加菜单" />
 </asp:Content>
 

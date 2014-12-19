@@ -19,7 +19,11 @@ body,td,th {
 -->
 </style>
     
-    
+     <link href="Style/css/zebra_dialog.css" rel="stylesheet" type="text/css" />
+       <link href="Style/css/ir_black.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="Style/js/jquery-1.6.2.js"></script>
+        <script type="text/javascript" src="Style/js/highlight.js"></script>
+        <script type="text/javascript" src="Style/js/zebra_dialog.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,7 +39,7 @@ body,td,th {
                     <div id="menu" >
   <ul>
     <li><a href="#"  class="hover">用户管理</a></li>
-    <li><a href="#">菜单管理</a></li>
+    <li><a href="menu.aspx">菜单管理</a></li>
     <li><a href="#">点餐</a></li>
     <li><a href="#">诚聘英才</a></li>
     <li><a href="#">用户留言</a></li>
