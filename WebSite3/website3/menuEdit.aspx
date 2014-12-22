@@ -20,6 +20,14 @@
                 <asp:TextBox ID="txtMoney"  runat="server"></asp:TextBox>
             </td>
         </tr>
+                <tr>
+            <td class="style4">
+               图片</td>
+            <td>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+            </td>
+            
+        </tr>
         
         <tr>
             <td class="style2">

@@ -13,7 +13,11 @@ public partial class menuadd : BasePage
     }
     protected void btnAdd_Click(object sender, EventArgs e)
     {
-        string sql = string.Format("insert into t_Menu (menuname,money) values( '{0}','{1}')", txtCai.Text, txtMoney.Text); 
+        string strfile = FileUpload1.FileName;
+        string pathname = System.Web.HttpContext.Current.Server.MapPath("img");
+        FileUpload1.SaveAs(pathname + "\\" + strfile);
+
+        string sql = string.Format("insert into t_Menu (menuname,money,picturename) values( '{0}','{1}','{2}')", txtCai.Text, txtMoney.Text,strfile); 
 
         try
         {
@@ -36,5 +40,6 @@ public partial class menuadd : BasePage
             MsgBoxError("添加");
         }
     }
+   
 
 }

@@ -11,9 +11,18 @@ body,td,th {
 	font-size: 12px;
 }
 #menu{height:30px;background:url(images/menubg.gif) repeat-x;border:1px solid #dde7d4;margin-bottom:10px;OVERFLOW:hidden}
-#menu ul{float:left;list-style:none;margin:0px;}
-#menu ul li{float:left;margin:0 10px;display:block;line-height:30px;}
-#menu ul li a:link,#menu ul li a:visited{font-weight:bold;color:#666;display:block;text-decoration:none;padding:0 10px}
+#menu ul{float:left;list-style:none;margin:0px;
+            height: 63px;
+            width: 992px;
+        }
+#menu ul li{float:left;margin:0 10px;display:block;line-height:30px;
+            height: 34px;
+            width: 139px;
+        }
+#menu ul li a:link,#menu ul li a:visited{font-weight:bold;color:#666;display:block;text-decoration:none;padding:0 10px;
+            height: 38px;
+            width: 147px;
+        }
 #menu ul li a:hover{background:url(images/menubghover.gif) 2px 2px repeat-x;display:block}
 #menu ul .hover{background:url(images/menubghover.gif) 2px 2px repeat-x;display:block}
 -->
@@ -32,13 +41,13 @@ body,td,th {
             <table border="0" style="width: 1000px" align="center">
                 <tr>
                     <td>
-                        <img src="img/bgimg.png" /></td>
+                        <img src="left.jpg" style="width: 998px; height: 233px" /></td>
                 </tr>
                 <tr>
                     <td >
                     <div id="menu" >
   <ul>
-    <li><a href="#"  class="hover">用户管理</a></li>
+    <li><a href="userlist.aspx"  class="hover">用户管理</a></li>
     <li><a href="menu.aspx">菜单管理</a></li>
     <li><a href="#">点餐</a></li>
     <li><a href="#">诚聘英才</a></li>

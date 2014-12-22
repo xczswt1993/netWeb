@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
  <table class="style1">
         <tr>
-            <td class="style6" rowspan="4">
+            <td class="style6" rowspan="4" style="width: 66px">
                 <asp:Image ID="Image1" runat="server" Height="415px" Width="399px" 
                     src="left.jpg" style="margin-left: 0px" />
             </td>
@@ -20,7 +20,14 @@
                 <asp:TextBox ID="txtMoney"   runat="server"></asp:TextBox>
             </td>
         </tr>
-        
+        <tr>
+            <td class="style4">
+               图片</td>
+            <td>
+            <asp:FileUpload ID="FileUpload1" runat="server" />
+            </td>
+            
+        </tr>
         <tr>
             <td class="style2">
                 <asp:Label ID="lbmessage" runat="server" CssClass="style3" ForeColor="#3333CC"></asp:Label>
